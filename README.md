@@ -41,4 +41,5 @@ https://cesarevc-api-ml.herokuapp.com/
 los endpoints quedarian de la siguiente manera siendo ambas peticiones de tipo get
 
 https://cesarevc-api-ml.herokuapp.com/api/getCompanyData/CELULANDIA STORE
+
 https://cesarevc-api-ml.herokuapp.com/api/getCompanyArticles/84331371
