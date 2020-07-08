@@ -1,30 +1,21 @@
 'use strict'
 
 const express = require('express');
+
 const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-const { getCompanyData, getArticles } = require('./getData');
+// const { getCompanyData, getArticles } = require('./getData');
 
-
-// const getInfo = async () => {
-
-//     const companyData = await getCompanyData ('CELULANDIA STORE');
-
-//     const { meli_id } = companyData;
-
-//     const articlesData = await getArticles(meli_id);
-
-//     console.log(articlesData)
-
-// }
-
-// getInfo();
-
+const routes = require('./routes')
 
 // middleware
 app.use( express.static(__dirname + '/public'));
+
+
+// routes prefix
+app.use('/api', routes)
 
 
 app.listen(PORT, () => {
