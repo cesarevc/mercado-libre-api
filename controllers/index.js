@@ -145,8 +145,9 @@ const controller = {
 
             return data;
         });
-         // API RESPONSE        
-         return res.status(200).send({
+        
+        // API RESPONSE        
+        return res.status(200).send({
             status: 'success',
             payload: {
                 message: 'articulos de la empresa',
